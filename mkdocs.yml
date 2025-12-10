@@ -1,6 +1,8 @@
 site_name: Daiver's blog
 site_url: https://JL-Zhao.github.io/
 site_author: Daiver
+repo_url: https://github.com/JL-Zhao/JL-Zhao.github.io.git
+repo_name: Daiver's blog
 
 theme:
   name: material
