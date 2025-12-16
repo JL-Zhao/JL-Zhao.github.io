@@ -6,6 +6,7 @@ repo_name: Daiver's blog
 
 theme:
   name: material
+  custom_dir: custom_dir/
   features:
     - navigation.tabs
     - navigation.top
@@ -66,6 +67,10 @@ extra_javascript:
 
 nav: 
   - 主页: index.md
+  - 人工智能:
+    - 模型:
+      - AI/model/index.md
+      - Qwen2.5-VL: AI/model/Qwen2.5-VL.md
 
 
 
