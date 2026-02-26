@@ -47,6 +47,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.mark
+  - pymdownx.tilde
   - attr_list
   - md_in_html
   - pymdownx.emoji:
@@ -71,6 +72,8 @@ nav:
     - 模型:
       - AI/model/index.md
       - Qwen2.5-VL: AI/model/Qwen2.5-VL.md
+    - 强化学习:
+      - 使用 TRL 库对 Qwen2.5-VL 进行 GRPO: AI/rl/practice/grpo_qwen2.5vl.md
 
 
 
