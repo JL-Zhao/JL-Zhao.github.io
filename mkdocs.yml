@@ -73,7 +73,11 @@ nav:
       - AI/model/index.md
       - Qwen2.5-VL: AI/model/Qwen2.5-VL.md
     - 强化学习:
+      - AI/rl/index.md
       - 使用 TRL 库对 Qwen2.5-VL 进行 GRPO: AI/rl/practice/grpo_qwen2.5vl.md
+    - AI Infra:
+      - AI/infra/index.md
+      - SPTD 并行: AI/infra/SPTD并行.md
 
 
 
