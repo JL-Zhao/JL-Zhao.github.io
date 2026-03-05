@@ -1,0 +1,102 @@
+body {
+    font-family: "LXGW WenKai", sans-serif;
+    /* Lite version */
+    /* font-family: "LXGW WenKai Lite", sans-serif; */
+    /* TC version */
+    /* font-family: "LXGW WenKai TC", sans-serif; */
+    /* Screen version */
+    /* font-family: "LXGW WenKai Screen", sans-serif; */
+}
+
+button.md-top {
+    font-family: LXGW WenKai; /* 修改字体 */
+    font-size: 16px; /* 修改字体大小 */
+    font-weight: bold; /* 修改字体粗细 */
+    color: #518FC1; /* 修改字体颜色 */
+}
+
+/* 使特定类名的图片居中 */
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-and-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+/* 全局根字体大小 */
+@media screen and (min-width: 960px) {
+  html {
+    font-size: 137.5%;   /* ≈ 16px × 1.375 = 22px */
+  }
+}
+@media screen and (min-width: 100em) {
+  html {
+    font-size: 137.5%;
+  }
+}
+@media screen and (min-width: 125em) {
+  html {
+    font-size: 137.5%;
+  }
+}
+
+/* 主题内容区域字体大小 */
+.md-typeset {
+  font-size: .725rem;
+}
+
+/* 行内代码字体大小 */
+.md-typeset code:not(pre code) {
+  font-size: inherit;
+}
+
+/* 标题设置 */
+.md-typeset h1 {
+  color: #000000de
+}
+.md-typeset h1 {
+  font-weight: 600;
+}
+.md-typeset h3 {
+  font-weight: 500;
+}
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4 {
+  letter-spacing: 0;
+}
+.md-typeset h3 {
+  font-weight: 600;
+}
+.md-typeset code:not(pre code) {
+  font-size: inherit;
+}
+
+/* 让加粗（**文字**）变成橙色 */
+.md-typeset strong,
+.md-typeset b {
+  color: #f97316;          /* Tailwind 的橙色-500，或者你喜欢的橙色 #ff6600 / #ffa500 */
+  font-weight: 700;        /* 可选：加强加粗程度，默认已经是 bold */
+}
+
+/* 让斜体（*文字*）变成橙色 */
+.md-typeset em,
+.md-typeset i {
+  color: #f97316;
+  font-style: italic;      /* 保持斜体 */
+}
+
+/* 增大 logo 尺寸 */
+.md-header__button.md-logo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem !important;   /* 默认 header ~3rem，2.4~2.8rem 较安全 */
+  width: auto !important;
+}
