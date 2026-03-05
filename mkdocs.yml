@@ -1,8 +1,8 @@
-site_name: Daiver's blog
+site_name: Ricer's blog
 site_url: https://JL-Zhao.github.io/
-site_author: Daiver
+site_author: JL-Zhao
 repo_url: https://github.com/JL-Zhao/JL-Zhao.github.io.git
-repo_name: Daiver's blog
+repo_name: Ricer's blog
 
 theme:
   name: material
@@ -33,6 +33,8 @@ theme:
   language: "zh"
   icon:
     repo: fontawesome/brands/github
+  favicon: images/ajr_part.jpg
+  logo: images/mon3tr.svg
 
 markdown_extensions:
   - md_in_html
@@ -78,6 +80,9 @@ nav:
     - AI Infra:
       - AI/infra/index.md
       - SPTD 并行: AI/infra/SPTD并行.md
+    - 推理加速:
+      - AI/inference_accelerating/index.md
+      - KV Cache: AI/inference_accelerating/kv_cache.md
 
 
 

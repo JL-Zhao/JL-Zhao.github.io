@@ -89,3 +89,14 @@ button.md-top {
   color: #f97316;
   font-style: italic;      /* 保持斜体 */
 }
+
+/* 增大 logo 尺寸 */
+.md-header__button.md-logo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 2.4rem !important;   /* 默认 header ~3rem，2.4~2.8rem 较安全 */
+  width: auto !important;
+}
