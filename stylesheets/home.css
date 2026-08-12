@@ -1,0 +1,277 @@
+/* ============================================================
+   Riccer's Blog — 首页报纸风格样式（仅作用于 .newspaper 容器）
+   ============================================================ */
+
+.newspaper {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", "Times New Roman", serif;
+  background-color: transparent;
+  color: #2b2b2b;
+  border: 1px solid #2b2b2b;
+  padding: 1.1rem 1.4rem 1.4rem;
+  margin: 0.4rem 0 1.6rem;
+  box-shadow: 0 5px 18px rgba(60, 45, 20, 0.28);
+}
+
+/* ---- 报头 ---- */
+.masthead {
+  text-align: center;
+}
+
+.dateline {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #4a4a4a;
+  border-bottom: 1px solid #2b2b2b;
+  padding-bottom: 0.35rem;
+}
+
+.paper-vol {
+  letter-spacing: 0.3em;
+}
+
+.paper-title {
+  font-size: clamp(1.8rem, 6.5vw, 3.8rem);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  margin: 0.55rem 0 0.15rem;
+  color: #2b2b2b;
+}
+
+.paper-subtitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.9em;
+  text-indent: 0.9em; /* 抵消末字字距，视觉居中 */
+  color: #b03a2e;
+  margin: 0 0 0.35rem;
+}
+
+.paper-motto {
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  color: #555;
+  margin: 0 0 0.5rem;
+}
+
+/* 报头双线（细-粗-细三线） */
+.masthead-rule {
+  height: 7px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+  position: relative;
+}
+.masthead-rule::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2px;
+  border-top: 2px solid #2b2b2b;
+}
+
+/* ---- 头条区 ---- */
+.headline-block {
+  border: 1px solid #2b2b2b;
+  margin-top: 1.2rem;
+  padding: 1rem 1.2rem 1.2rem;
+  text-align: center;
+}
+
+.kicker {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.45em;
+  text-indent: 0.45em;
+  color: #b03a2e;
+  margin: 0 0 0.45rem;
+}
+
+.headline {
+  font-size: clamp(1rem, 2.6vw, 1.55rem);
+  font-weight: 900;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+  color: #2b2b2b;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.stat-card {
+  min-width: 8.5rem;
+  padding: 0.55rem 1.3rem 0.65rem;
+  border-top: 3px double #2b2b2b;
+  border-bottom: 1px solid #2b2b2b;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #b03a2e;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.66rem;
+  letter-spacing: 0.28em;
+  text-indent: 0.28em;
+  color: #4a4a4a;
+  margin-top: 0.1rem;
+}
+
+/* ---- 导读区 ---- */
+.guide-block {
+  border: 1px solid #2b2b2b;
+  margin-top: 1.2rem;
+  padding: 0 1.1rem 1rem;
+}
+
+.guide-title {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  text-indent: 0.35em;
+  margin: 0 -1.1rem 0.7rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #2b2b2b;
+  background: rgba(120, 90, 30, 0.06);
+  color: #2b2b2b;
+}
+
+.guide-columns {
+  columns: 2;
+  column-gap: 2.2rem;
+  column-rule: 1px solid #2b2b2b;
+}
+
+.guide-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  padding: 0.32rem 0;
+  font-size: 0.88rem;
+  break-inside: avoid;
+}
+
+.guide-name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.guide-dots {
+  flex: 1;
+  min-width: 1.2rem;
+  border-bottom: 2px dotted #2b2b2b;
+  transform: translateY(-0.22em);
+}
+
+.guide-link {
+  color: #b03a2e;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.guide-link:hover {
+  text-decoration: underline;
+}
+
+.guide-footer {
+  margin: 0.75rem 0 0;
+  padding-top: 0.55rem;
+  border-top: 1px dashed #9a9a9a;
+  text-align: center;
+  font-size: 0.6rem;
+  letter-spacing: 0.22em;
+  color: #6a6a6a;
+}
+
+/* ============================================================
+   深色模式（slate 主题）— 暗色纸张
+   ============================================================ */
+[data-md-color-scheme="slate"] .newspaper {
+  background-color: transparent;
+  color: #d9cfb6;
+  border-color: #8d8168;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.5);
+}
+[data-md-color-scheme="slate"] .dateline {
+  color: #b7ab92;
+  border-bottom-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .paper-title,
+[data-md-color-scheme="slate"] .headline {
+  color: #e9dfc6;
+}
+[data-md-color-scheme="slate"] .paper-subtitle,
+[data-md-color-scheme="slate"] .kicker,
+[data-md-color-scheme="slate"] .stat-number,
+[data-md-color-scheme="slate"] .guide-link {
+  color: #e0705a;
+}
+[data-md-color-scheme="slate"] .paper-motto {
+  color: #a89b80;
+}
+[data-md-color-scheme="slate"] .masthead-rule {
+  border-top-color: #8d8168;
+  border-bottom-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .masthead-rule::after {
+  border-top-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .headline-block,
+[data-md-color-scheme="slate"] .guide-block {
+  border-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .stat-card {
+  border-top-color: #8d8168;
+  border-bottom-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .stat-label,
+[data-md-color-scheme="slate"] .guide-footer {
+  color: #9c8f74;
+}
+[data-md-color-scheme="slate"] .guide-title {
+  color: #e9dfc6;
+  border-bottom-color: #8d8168;
+  background: rgba(255, 235, 180, 0.05);
+}
+[data-md-color-scheme="slate"] .guide-dots {
+  border-bottom-color: #8d8168;
+}
+[data-md-color-scheme="slate"] .guide-footer {
+  border-top-color: #6d6150;
+}
+
+/* ============================================================
+   响应式
+   ============================================================ */
+@media (max-width: 640px) {
+  .newspaper {
+    padding: 0.8rem 0.9rem 1rem;
+  }
+  .guide-columns {
+    columns: 1;
+  }
+  .stats-row {
+    gap: 0.9rem;
+  }
+  .stat-card {
+    min-width: 7rem;
+  }
+  .dateline {
+    font-size: 0.68rem;
+  }
+}
+
