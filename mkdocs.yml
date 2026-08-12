@@ -1,8 +1,8 @@
-site_name: Ricer's blog
+site_name: Riccer's blog
 site_url: https://JL-Zhao.github.io/
 site_author: JL-Zhao
 repo_url: https://github.com/JL-Zhao/JL-Zhao.github.io.git
-repo_name: Ricer's blog
+repo_name: Riccer's blog
 
 theme:
   name: material
@@ -64,6 +64,7 @@ plugins:
 extra_css:
   - https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - ./stylesheets/extra.css
+  - ./stylesheets/home.css
 
 extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
